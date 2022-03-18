@@ -1,0 +1,38 @@
+version: '3.9'
+
+services:
+  mssql:
+    build:
+      context: .
+      dockerfile: sqlvolume/database-dockerfile
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "dbPa55w0rd"
+      MSSQL_PID: Express
+    user: root
+    ports:
+      - "11433:1433"
+    volumes:
+      - ./sqlvolume/backups:/var/opt/mssql/backups
+      - mssql_server_data:/var/opt/mssql/data
+    networks:
+      - api
+
+  superservicetimetable.api:
+    image: ${DOCKER_REGISTRY-}superservicetimetableapi
+    build:
+      context: .
+      dockerfile: SuperServiceTimetable/Dockerfile
+    ports:
+      - "5000:80"
+      - "5001:443"
+    depends_on:
+      - mssql
+    networks:
+      - api
+
+networks:
+  api: {}
+
+volumes:
+  mssql_server_data:
