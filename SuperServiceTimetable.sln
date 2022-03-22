@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperServiceTimetable.API", "SuperServiceTimetable\SuperServiceTimetable.API.csproj", "{40206882-2237-48C1-BE63-46B09A6DDD5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperServiceTimetable.API", "SuperServiceTimetable\SuperServiceTimetable.API.csproj", "{40206882-2237-48C1-BE63-46B09A6DDD5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperServiceTimetable.Domain", "SuperServiceTimetable.Domain\SuperServiceTimetable.Domain.csproj", "{FFC5F192-ACBE-47D3-BD4E-5B07F3CC61CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperServiceTimetable.Domain", "SuperServiceTimetable.Domain\SuperServiceTimetable.Domain.csproj", "{FFC5F192-ACBE-47D3-BD4E-5B07F3CC61CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperServiceTimetable.Logic", "SuperServiceTimetable.Logic\SuperServiceTimetable.Logic.csproj", "{7E149015-771A-4CCC-B641-B7D0B1C79C0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperServiceTimetable.Repositories", "SuperServiceTimetable.Repositories\SuperServiceTimetable.Repositories.csproj", "{4C7604BF-9056-418F-A404-C8488BF5A515}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperServiceTimetable.Repositories", "SuperServiceTimetable.Repositories\SuperServiceTimetable.Repositories.csproj", "{4C7604BF-9056-418F-A404-C8488BF5A515}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperServiceTimetable.Utils", "SuperServiceTimetable.Utils\SuperServiceTimetable.Utils.csproj", "{8B1B9400-AC57-4E95-88DD-F1A142B16BC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperServiceTimetable.Utils", "SuperServiceTimetable.Utils\SuperServiceTimetable.Utils.csproj", "{8B1B9400-AC57-4E95-88DD-F1A142B16BC6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperServiceTimetable.Tests", "SuperServiceTimetable.Tests\SuperServiceTimetable.Tests.csproj", "{B1B1A838-45BA-42D1-B9D3-9704F8247C4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperServiceTimetable.Tests", "SuperServiceTimetable.Tests\SuperServiceTimetable.Tests.csproj", "{B1B1A838-45BA-42D1-B9D3-9704F8247C4C}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8480D1E5-64B5-462D-B32C-7BC79612CDA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperServiceTimetable.Services", "..\SuperServiceTimetable.Services\SuperServiceTimetable.Services.csproj", "{04065CD9-A6A0-4227-842D-675517D1949C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +31,6 @@ Global
 		{FFC5F192-ACBE-47D3-BD4E-5B07F3CC61CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFC5F192-ACBE-47D3-BD4E-5B07F3CC61CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFC5F192-ACBE-47D3-BD4E-5B07F3CC61CA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7E149015-771A-4CCC-B641-B7D0B1C79C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E149015-771A-4CCC-B641-B7D0B1C79C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7E149015-771A-4CCC-B641-B7D0B1C79C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E149015-771A-4CCC-B641-B7D0B1C79C0D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4C7604BF-9056-418F-A404-C8488BF5A515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4C7604BF-9056-418F-A404-C8488BF5A515}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C7604BF-9056-418F-A404-C8488BF5A515}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{8480D1E5-64B5-462D-B32C-7BC79612CDA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8480D1E5-64B5-462D-B32C-7BC79612CDA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8480D1E5-64B5-462D-B32C-7BC79612CDA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04065CD9-A6A0-4227-842D-675517D1949C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04065CD9-A6A0-4227-842D-675517D1949C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04065CD9-A6A0-4227-842D-675517D1949C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04065CD9-A6A0-4227-842D-675517D1949C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

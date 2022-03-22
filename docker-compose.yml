@@ -11,7 +11,7 @@ services:
       MSSQL_PID: Express
     user: root
     ports:
-      - "11433:1433"
+      - "1400:1433"
     volumes:
       - ./sqlvolume/backups:/var/opt/mssql/backups
       - mssql_server_data:/var/opt/mssql/data
@@ -23,9 +23,6 @@ services:
     build:
       context: .
       dockerfile: SuperServiceTimetable/Dockerfile
-    ports:
-      - "5000:80"
-      - "5001:443"
     depends_on:
       - mssql
     networks:

@@ -1,1 +1,2 @@
 FROM mcr.microsoft.com/mssql/server:2019-latest
+CMD /opt/mssql-tools/bin/sqlcmd -U 'sa' -P 'dbPa55w0rd' -Q"RESTORE DATABASE SuperServiceTimetable FROM DISK='/var/opt/mssql/backups/SuperServiceTimetable.bak';" & /opt/mssql/bin/sqlservr

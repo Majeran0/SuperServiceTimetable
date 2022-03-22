@@ -15,5 +15,11 @@
     </None>
     <None Include="docker-compose.yml" />
     <None Include=".dockerignore" />
+    <None Include="sqlvolume\backups\SuperServiceTimetable.bak" />
+    <None Include="sqlvolume\database-dockerfile" />
+    <None Include="sqlvolume\obj\Docker\CanonicalServiceNames.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="sqlvolume\obj\**" />
   </ItemGroup>
 </Project>
